@@ -13,13 +13,17 @@
 #   rake "some:great:rake:task"
 # end
 #
-# every 4.days do
+# every :monday, at: '3:00' do
 #   runner "AnotherModel.prune_old_records"
 # end
 
 # Learn more: http://github.com/javan/whenever
 
-every '* * * * *' do
-  command "echo 'sending email now!!!'"
-  runner "User.all.each { |u| QuoteMailer.quote_email(u).deliver_now! }"
+every '*/5 * * * 1', environment: :development do
+  rake 'email:rick_and_morty'
+end
+
+
+every :sunday, at: '11:42pm' do
+  runner "User.all.each { |u| QuoteMailer.quote_email(u).deliver_now! }", environment: :development
 end

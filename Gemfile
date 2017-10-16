@@ -45,6 +45,7 @@ end
 
 gem 'faker', git: 'https://github.com/stympy/faker.git'
 gem 'mail'
+gem 'dotenv-rails'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
