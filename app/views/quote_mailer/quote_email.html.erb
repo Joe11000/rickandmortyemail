@@ -2,7 +2,7 @@
   <%= image_tag 'https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2017/01/25/16/rick-and-morty-season-3.jpg', alt: '1. Rick and Morty Picture' %>
 <% else %>
   <%= image_tag attachments['rick_pick.jpg'].url, alt: '2. Rick and Morty Picture' %>
-<%= end %>
+<% end %>
 
 <h1>Hey <%= @user.name %>,</h1>
 
