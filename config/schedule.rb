@@ -19,11 +19,17 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every '*/5 * * * 1', environment: :development do
+env 'MAILTO', 'joenoonan27@gmail.com'
+
+every '* * * * *', env: :development do
   rake 'email:rick_and_morty'
 end
 
-
-every :sunday, at: '11:42pm' do
-  runner "User.all.each { |u| QuoteMailer.quote_email(u).deliver_now! }", environment: :development
+every 2.minutes do
+  rake 'what:time'
 end
+
+
+# every :sunday, at: '11:42pm' do
+#   runner "User.all.each { |u| QuoteMailer.quote_email(u).deliver_now! }", environment: :development
+# end
