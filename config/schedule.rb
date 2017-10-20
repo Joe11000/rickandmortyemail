@@ -25,6 +25,10 @@ every '* 18 * * *', env: :development do
   rake 'email:rick_and_morty'
 end
 
+every :day, at: '1:35pm' do
+  rake 'email:rick_and_morty'
+end
+
 # every 2.minutes do
 #   rake 'what:time'
 # end
