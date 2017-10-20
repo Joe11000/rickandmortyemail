@@ -1,0 +1,16 @@
+--2017-10-18 19:07:02--  https://www.hentai-foundry.com/?enterAgree=1
+Resolving www.hentai-foundry.com... 2607:f0d0:1002:76::30, 74.86.8.12
+Connecting to www.hentai-foundry.com|2607:f0d0:1002:76::30|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘www.hentai-foundry.com/index.html?enterAgree=1.tmp’
+
+             www.hentai-f     [<=>                                ]       0  --.-KB/s               www.hentai-foundry.com/in     [ <=>                               ]  69.68K  --.-KB/s    in 0.1s    
+
+2017-10-18 19:07:03 (518 KB/s) - ‘www.hentai-foundry.com/index.html?enterAgree=1.tmp’ saved [71355]
+
+Removing www.hentai-foundry.com/index.html?enterAgree=1.tmp since it should be rejected.
+
+FINISHED --2017-10-18 19:07:03--
+Total wall clock time: 0.7s
+Downloaded: 1 files, 70K in 0.1s (518 KB/s)

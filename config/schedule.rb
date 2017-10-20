@@ -21,13 +21,13 @@
 
 env 'MAILTO', 'joenoonan27@gmail.com'
 
-every '* * * * *', env: :development do
+every '* 18 * * *', env: :development do
   rake 'email:rick_and_morty'
 end
 
-every 2.minutes do
-  rake 'what:time'
-end
+# every 2.minutes do
+#   rake 'what:time'
+# end
 
 
 # every :sunday, at: '11:42pm' do
