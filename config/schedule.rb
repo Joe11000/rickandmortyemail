@@ -19,7 +19,7 @@
 
 # Learn more: http://github.com/javan/whenever
 
-env 'MAILTO', 'joenoonan27@gmail.com'
+# env 'MAILTO', 'joenoonan27@gmail.com'
 
 every '* 18 * * *', env: :development do
   rake 'email:rick_and_morty'
