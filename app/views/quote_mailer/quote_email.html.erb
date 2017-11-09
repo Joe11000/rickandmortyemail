@@ -4,8 +4,10 @@
   <%#= image_tag attachments['rick_pick.jpg'].url, alt: '2. Rick and Morty Picture' %>
 <%# end %>
 
-<%= image_tag @random_google_image_url, alt: '1. Rick and Morty Picture' %>
+<h1>Daily Rick and Morty Email</h1>
 
-<h1>Hey <%= @random_character %>,</h1>
+<%= image_tag @random_google_image_url, alt: 'Rick and Morty Picture', id: 'image_in_email_body' %>
 
-<h2><%= @random_quote %><h2>
+<h2 id='random_character'>Hey <%= @random_character %>,</h2>
+
+<h3 id='random_quote'><%= @random_quote %><h3>
